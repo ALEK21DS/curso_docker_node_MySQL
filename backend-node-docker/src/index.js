@@ -8,7 +8,8 @@ const jwtSecret = process.env.JWT_SECRET;
 
 const cors = require('cors');
 const corsOptions = {
-    origin: 'http://localhost:3000' || process.env.CORS_ORIGIN,
+    origin: 'http://localhost:3000' || process.env.CORS_ORIGIN, 
+    // OR es para que si no existe la variable de entorno CORS_ORIGIN, se use http://localhost:3000
 };
 
 app.use(express.json());
