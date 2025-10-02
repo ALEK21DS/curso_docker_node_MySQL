@@ -1,5 +1,6 @@
 function esperar(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms)); // Esta linea retorna una promesa que se resuelve en ms segundos
+    return new Promise(resolve => setTimeout(resolve, ms)); 
+    // Esta linea retorna una promesa que se resuelve en ms segundos
 }
 
 
